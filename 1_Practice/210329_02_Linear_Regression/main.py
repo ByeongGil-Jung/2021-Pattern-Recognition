@@ -24,6 +24,8 @@ def main():
     # Figure
     fig = plt.figure()
     plt.scatter(X, t, color='b')
+
+    plt.savefig("./data_plot.png")
     plt.show()
 
     # Split train data and val data
@@ -50,6 +52,8 @@ def main():
     plt.plot(x_space[:, 0], y_p[:, 0], color='r', label="Predict")
     plt.grid(True)
     plt.legend()
+
+    plt.savefig("./linear_regression_plot.png")
     plt.show()
 
 
