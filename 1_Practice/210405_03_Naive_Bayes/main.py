@@ -75,13 +75,15 @@ def naive_bayes_partial_features(data):
     prob_feature_space = prob_feature_space.reshape((100, 100, 3))
 
     ax[0].imshow(
-        prob_feature_space, extent=(f1f1.min(), f1f1.max(), f2f2.min(), f2f2.max()),
+        prob_feature_space,
+        extent=(f1f1.min(), f1f1.max(), f2f2.min(), f2f2.max()),
         origin="lower",
         aspect="auto",
         alpha=0.3
     )
     ax[1].imshow(
-        prob_feature_space, extent=(f1f1.min(), f1f1.max(), f2f2.min(), f2f2.max()),
+        prob_feature_space,
+        extent=(f1f1.min(), f1f1.max(), f2f2.min(), f2f2.max()),
         origin="lower",
         aspect="auto",
         alpha=0.3
