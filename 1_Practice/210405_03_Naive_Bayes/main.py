@@ -12,7 +12,7 @@ from sklearn.naive_bayes import GaussianNB
 
 
 def plot(data):
-    X = pd.DataFrame(data.data, columns=data.feature_names)
+    X = pd.DataFrame(data.X, columns=data.feature_names)
     y = pd.DataFrame(data.target, columns=["species"])
 
     print(f"pd_iloc, \n"
@@ -32,7 +32,7 @@ def naive_bayes_partial_features(data):
     print(f"Type of data : {type(data)}")
 
     # Set data
-    X = data.data[:, [2, 3]]  # 3, 4 번 feature 사용
+    X = data.X[:, [2, 3]]  # 3, 4 번 feature 사용
     y = data.target  # 0, 1, 2
 
     print(f"Shape X : {X.shape} y: {y.shape}")

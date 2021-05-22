@@ -213,7 +213,7 @@ class MultiLayerPerceptron(object):
 
 
 def split(data):
-    X = data.data / 16  # 값의 범위를 0-1 로 normalize
+    X = data.X / 16  # 값의 범위를 0-1 로 normalize
     y = data.target.reshape((-1, 1))
 
     # 0 -> [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
